@@ -13,6 +13,10 @@ body, a:link, a:visited, a:active{
   padding:5px 12px;
   float:right;
 }
+.lineUpButton {
+  padding: 5px 12px;
+  float: left;
+}
 .topbar{
   height:32px;
   background-color: #555;
@@ -24,4 +28,13 @@ body, a:link, a:visited, a:active{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+}
+.blinkyDancer{
+  border-color: yellow;
+}
+.nerdyDancer{
+  border-color: blue;
+}
+.coolDancer{
+  border-color: pink;
 }
