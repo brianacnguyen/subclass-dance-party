@@ -31,11 +31,11 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 .blinkyDancer{
-  border-color: yellow;
+  border-color: black;
 }
 .nerdyDancer{
-  border-color: blue;
+  border: none;
 }
 .coolDancer{
-  border-color: pink;
+  border-color: green;
 }
