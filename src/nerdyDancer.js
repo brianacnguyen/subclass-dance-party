@@ -8,5 +8,5 @@ makeNerdyDancer.prototype.constructor = makeNerdyDancer;
 
 makeNerdyDancer.prototype.step = function(){
   makeDancer.prototype.step.call(this); 
-  this.$node.toggle();
+  // this.$node.toggle();
 };

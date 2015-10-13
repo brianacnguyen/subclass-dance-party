@@ -29,6 +29,50 @@ $(document).ready(function(){
     );
     window.dancers.push(dancer);
     $('body').append(dancer.$node);
+    // changeInteractions();
+    // var changeInteractions = function(){  
+    var notPartnered = windows.dancers.slice();
+    var partnered = [];
+    // var z = notPartnered.length;
+    windows.dancers.forEach(function(dancer){
+      if (partnered.indexOf(dancer) >= 0) { return; }
+      // if (dancer return; )
+      var top = dancer.top;
+      var left = dancer.left;
+      for (var i = 0; i < notPartnered.length; i++) {
+        var newDancer = notPartnered[i];
+        if (newDancer === dancer) {continue; }
+        var topTest = ((Math.abs(newDancer.top - top)) <= 200);
+        var leftTest = ((Math.abs(newDancer.left - left)) <= 200);
+        if (topTest && leftTest) {
+          partnered.push([dancer,newDancer]);
+          var dancerIndex = notPartnered.indexOf(dancer);
+          notpartnered.splice(dancerIndex,1);
+          var newDancerIndex = notPartnered.indexOf(newDancer);
+          notPartnered.splice(newDancerIndex,1);
+          break;
+        }
+      }
+    });
+
+    partnered.forEach()
+            // var middleTop = ((newDancer.top + top) / 2);
+        // var middleLeft = ((newDancer.left + left) /2);
+//setInterval(function(){
+          //   dancer.$node.stop(true,true).animate({left: middleLeft, top: middleTop}, 1000, 
+          //     function(){ $(this).stop(true,true).animate({left: left, top: top}, 1000); 
+          //   });
+          // }, 2000);
+
+
+        // dancer.top     .animate({ top: newDancer.top }, 500)
+        // dancer.left
+
+        // find all dancers where dancer.top || dancer.left within 15px
+          // check actualDistance
+            // 
+      // })
+    // }
   });
 
   $(".lineUpButton").on("click", function(event){
