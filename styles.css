@@ -26,16 +26,22 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
   position:absolute;
+  border: 2px solid rgba(0,0,0,0.5);
 }
-.blinkyDancer{
-  border-color: black;
-}
-.nerdyDancer{
+.nerdyDancer {
   border: none;
 }
-.coolDancer{
-  border-color: green;
-}
+.unmute{
+  background-image: url(http://franriavilla.in/images/unmute.png);
+  background-size: cover;
+  width: 25px;
+  height: 15px;
+  cursor: pointer;
+  padding: 5px 2px;
+  float: left;
+  }
+
+.mute{
+  background-image: url(http://franriavilla.in/images/mute.png);
+  }

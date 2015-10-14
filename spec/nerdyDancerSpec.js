@@ -13,11 +13,12 @@ describe("nerdyDancer", function() {
     expect(nerdyDancer.$node).to.be.an.instanceof(jQuery);
   });
 
-  it("should have a step function that makes its node blink", function() {
-    sinon.spy(nerdyDancer.$node, 'toggle');
-    nerdyDancer.step();
-    expect(nerdyDancer.$node.toggle.called).to.be.true;
-  });
+  // FROM ZACH: I commented out this now-useless test:
+  // it("should have a step function that makes its node blink", function() {
+  //   sinon.spy(nerdyDancer.$node, 'toggle');
+  //   nerdyDancer.step();
+  //   expect(nerdyDancer.$node.toggle.called).to.be.true;
+  // });
 
   describe("dance", function(){
     it("should call step at least once per second", function(){
