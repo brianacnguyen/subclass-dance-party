@@ -95,7 +95,4 @@ $(document).ready(function(){
       dancer.lineUp();
     });
   });
-  $("#mute").on("click" , function(event) {
-    $(this).closest("audio").prepend("mute");
-  })
 });
